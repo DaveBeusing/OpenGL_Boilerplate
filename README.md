@@ -1,7 +1,7 @@
 # C++ OpenGL GLFW GLAD VSCode Boilerplate
 
 This repo contains Boilerplate code I use as starting point to create OpenGL C++ projects.<br>
-It contains GLFW, GLAD, GLM, stb and make us of VSCode and windows-gcc-x64.
+It contains GLFW, GLAD, GLM, stb and make use of VSCode and windows-gcc-x64.
 
 
 
