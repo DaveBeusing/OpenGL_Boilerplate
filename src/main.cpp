@@ -12,8 +12,9 @@ void FramebufferSizeCallback( GLFWwindow* window, int width, int height ){
 }
 
 void KeyEventCallback( GLFWwindow* window, int key, int scancode, int action, int mods ){
-	if( key == GLFW_KEY_E && action == GLFW_PRESS ){
-		std::cout << "You pressed the e key!" << std::endl;
+	// Escape = close Window
+	if( glfwGetKey( window, GLFW_KEY_ESCAPE ) == GLFW_PRESS ){
+		glfwSetWindowShouldClose( window, true );
 	}
 }
 
@@ -41,8 +42,10 @@ int main(){
 		std::cout << "Failed to initialize GLAD" << std::endl;
 		return -1;
 	}
+
 	//Register Callbacks -> glfwPollEvents
 	glfwSetKeyCallback( window, KeyEventCallback);
+
 	glfwSetFramebufferSizeCallback( window, FramebufferSizeCallback );
 	glViewport( 0, 0, windowWidth, windowHeight );
 	while( !glfwWindowShouldClose( window ) ){
