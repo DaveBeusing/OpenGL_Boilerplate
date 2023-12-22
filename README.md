@@ -22,30 +22,3 @@ It contains GLFW, GLAD, GLM, stb and make use of VSCode and windows-gcc-x64.
 >Define STB_IMAGE_IMPLEMENTATION before you include stb_image.h to create the implementation.<br><br>
  #define STB_IMAGE_IMPLEMENTATION<br>
  #include <stb/stb_image.h><br>
-
-
-#### Project Structure
-```
-ProjectRoot
-	/.vscode
-	/bin
-	/include
-		/vendor
-			/glad
-				/glad.c
-				/glad.h
-			/GLFW
-				/glfw3.h
-				/glfw3native.h
-			/glm
-			/KHR
-				/khrplatform.h
-			/stb
-				/stb_image_write.h
-				/stb_image.h
-	/lib
-		/glfw3dll.lib
-	/resources
-	/src
-		/main.cpp
-```
