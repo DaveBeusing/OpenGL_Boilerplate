@@ -1,5 +1,7 @@
 /**
  * OpenGL Boilerplate
+ * 
+ * Basic
  */
 
 #include <iostream>
